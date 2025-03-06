@@ -1,40 +1,39 @@
 /AWS_PROJECT_WITHTERRAFORM<br>
 │<br>
-├── /modules
-│   ├── /networking
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   │
-│   ├── /security_group
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   │
-│   ├── /Ec2
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   │
-│   ├── /load_balancer
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   │
-│   └── /s3_bucket            
-│       ├── main.tf
-│       ├── variables.tf
-│       └── outputs.tf
-│
-├── main.tf
-├── provider.tf
-├── variables.tf
-├── outputs.tf
-└── terraform.tfvars
+├── /modules<br>
+│   ├── /networking<br>
+│   │   ├── main.tf<br>
+│   │   ├── variables.tf<br>
+│   │   └── outputs.tf<br>
+│   │<br>
+│   ├── /security_group<br>
+│   │   ├── main.tf<br>
+│   │   ├── variables.tf<br>
+│   │   └── outputs.tf<br>
+│   │<br>
+│   ├── /Ec2<br>
+│   │   ├── main.tf<br>
+│   │   ├── variables.tf<br>
+│   │   └── outputs.tf<br>
+│   │<br>
+│   ├── /load_balancer<br>
+│   │   ├── main.tf<br>
+│   │   ├── variables.tf<br>
+│   │   └── outputs.tf<br>
+│   │<br>
+│   └── /s3_bucket        
+│       ├── main.tf<br>
+│       ├── variables.tf<br>
+│       └── outputs.tf<br>
+│<br>
+├── main.tf<br>
+├── provider.tf<br>
+├── variables.tf<br>
+├── outputs.tf<br>
+└── terraform.tfvars<br>
 
 
-===========================================================================================================================
-#
+##
 Configure the AWS Account to terminal 
 
 Go to AWS Profile ---> Security Credentials ----> Access Keys ----> Create Access Keys 
