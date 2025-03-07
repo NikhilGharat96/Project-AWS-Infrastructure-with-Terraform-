@@ -1,5 +1,5 @@
-## 🧑🏽‍💻To Apply This Configuration 
-1. Make one directory in your local with any name.
+## 🔥👨🏻‍💻To Apply This Configuration 
+1. Make one directory📁 in your local with any name.
 2. Add this all files in that directory.
 3. And then open this dir in VS-Code.
 ## ⛓️‍💥Configure the AWS Account to terminal (powershell)
@@ -64,3 +64,19 @@ terraform plan
 ```bash
 terraform apply --auto-approve
 ```
+#
+<h3>After executing all commands terrform creates infrastructure and after all done,<br>
+it returns loadbalancer_dns in terminal so copy this and paste in browser, and 🔍check your<br>
+requests are properly handled by load balancer or not.</h3>
+
+```bash
+Outputs:
+
+loadbalancer_dns = "myalb-1129407946.us-east-1.elb.amazonaws.com"
+web1_instance_id = "i-07100c5da2c00c90f"
+web1_public_ip = "18.209.13.102"
+web2_instance_id = "i-093e96722160f6271"
+web2_public_ip = "34.207.254.200"
+```
+##
+========================================== DONE 👍===========================================
