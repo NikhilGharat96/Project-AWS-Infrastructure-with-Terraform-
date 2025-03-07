@@ -1,5 +1,5 @@
-module "Networking" {
-  source             = "./modules/Networking"
+module "networking" {
+  source             = "./modules/networking"
   cidr               = var.cidr
   subnet-1_cidr       = var.subnet-1_cidr
   subnet-2_cidr       = var.subnet-2_cidr
@@ -8,24 +8,24 @@ module "Networking" {
 
 module "security_group" {
   source = "./modules/security_group"
-  vpc_id = module.Networking.vpc_id
+  vpc_id = module.networking.vpc_id
 }
 
 module "Ec2" {
   source            = "./modules/Ec2"
   ami               = var.ami
   instance_type     = var.instance_type
-  vpc_id            = module.Networking.vpc_id
-  subnet-1_id        = module.Networking.subnet1_id
-  subnet-2_id        = module.Networking.subnet2_id
+  vpc_id            = module.networking.vpc_id
+  subnet-1_id        = module.networking.subnet1_id
+  subnet-2_id        = module.networking.subnet2_id
   security_group_id = module.security_group.security_group_id
 }
 
 module "load_balancer" {
   source            = "./modules/load_balancer"
-  vpc_id            = module.Networking.vpc_id
-  subnet-1_id        = module.Networking.subnet1_id
-  subnet-2_id        = module.Networking.subnet2_id
+  vpc_id            = module.networking.vpc_id
+  subnet-1_id        = module.networking.subnet1_id
+  subnet-2_id        = module.networking.subnet2_id
   security_group_id = module.security_group.security_group_id
   ec2_instance_ids  = [module.Ec2.web1_instance_id, module.Ec2.web2_instance_id]
 }
