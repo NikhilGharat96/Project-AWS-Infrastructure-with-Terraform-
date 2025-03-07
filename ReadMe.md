@@ -78,5 +78,10 @@ web1_public_ip = "18.209.13.102"
 web2_instance_id = "i-093e96722160f6271"
 web2_public_ip = "34.207.254.200"
 ```
-##                                        
+<b>6. To Delete entire infrastructure which is creates from that code.
+
+```bash
+terraform destory --auto-approve
+```
+##
 ========================================== DONE 👍===========================================
