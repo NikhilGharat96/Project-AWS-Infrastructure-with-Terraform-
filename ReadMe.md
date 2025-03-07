@@ -65,9 +65,9 @@ terraform plan
 terraform apply --auto-approve
 ```
 #
-<h3>After executing all commands terrform creates infrastructure and after all done,<br>
-it returns loadbalancer_dns in terminal so copy this and paste in browser, and 🔍check your<br>
-requests are properly handled by load balancer or not.</h3>
+<h3>👉After executing all commands terrform creates infrastructure and after all done,<br>
+it returns loadbalancer_dns in terminal so copy your lb_dns and paste in browser, and<br>
+🔍check your requests are properly handled by load balancer or not.</h3>
 
 ```bash
 Outputs:
@@ -78,5 +78,5 @@ web1_public_ip = "18.209.13.102"
 web2_instance_id = "i-093e96722160f6271"
 web2_public_ip = "34.207.254.200"
 ```
-##
+##                                        
 ========================================== DONE 👍===========================================
